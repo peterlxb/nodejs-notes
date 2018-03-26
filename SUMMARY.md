@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Nodejs基础](Node-Fundamental.md)
-  * Globals
-  * Buffer
+  * [Globals](Node-Fundamental/globals.md)
+  * [Buffer](Node-Fundamental/buffer.md)
   * Streams流
   * [Events模块](Node-Fundamental/Events.md)
   * File systems文件系统
