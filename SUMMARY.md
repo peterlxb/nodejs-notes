@@ -22,4 +22,5 @@
 * Socket.io介绍
 * [前后端流程图](qian-hou-duan-liu-cheng-tu.md)
 * [应用架构](ying-yong-jia-gou.md)
+* [认证流程](ren-zheng-liu-cheng.md)
 
