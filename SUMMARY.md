@@ -21,5 +21,5 @@
   * [介绍](an-quan-yu-ren-zheng/jie-shao.md)
 * Socket.io介绍
 * [前后端流程图](qian-hou-duan-liu-cheng-tu.md)
-* 应用架构
+* [应用架构](ying-yong-jia-gou.md)
 
