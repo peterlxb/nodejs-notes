@@ -14,6 +14,9 @@
   * [node内部介绍](nodenei-bu-jie-shao.md)
   * [内部模块实现的原理](nei-bu-mo-kuai-shi-xian-de-yuan-li.md)
   * [线程threads介绍](xian-cheng-threads-jie-shao.md)
+  * [Node事件循环](nodeshi-jian-xun-huan.md)
+  * [libuv线程池](libuvxian-cheng-chi.md)
+  * [libuv OS代理](libuv-osdai-li.md)
 * [Express介绍](expressjie-shao.md)
 * Nodejs测试
 * [MongoDB介绍](mongodbjie-shao.md)
