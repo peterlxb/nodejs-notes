@@ -10,8 +10,8 @@
   * Networking
   * Child process
   * Crypto加密
-* 异步的Nodejs
-  * Callback & Event Loop
+* Node内部
+  * [node内部介绍](nodenei-bu-jie-shao.md)
 * [Express介绍](expressjie-shao.md)
 * Nodejs测试
 * [MongoDB介绍](mongodbjie-shao.md)
@@ -22,5 +22,5 @@
 * Socket.io介绍
 * [前后端流程图](qian-hou-duan-liu-cheng-tu.md)
 * [应用架构](ying-yong-jia-gou.md)
-* [认证流程](ren-zheng-liu-cheng.md)
+* Node内部
 
