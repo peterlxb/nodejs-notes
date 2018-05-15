@@ -10,6 +10,12 @@ Node事件循环
 
 会执行上面五个步骤。
 
+
+
+
+
+
+
 官方文档中的图表
 
 ![](/assets/屏幕快照 2018-05-13 上午10.28.13.png)[https://github.com/nodejs/node/blob/v6.x/doc/topics/event-loop-timers-and-nexttick.md](https://github.com/nodejs/node/blob/v6.x/doc/topics/event-loop-timers-and-nexttick.md)
