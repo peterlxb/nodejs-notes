@@ -6,8 +6,6 @@ Node事件循环
 
 ![](/assets/屏幕快照 2018-05-13 上午10.25.54.png)
 
-
-
 官网上的关于什么是Event Loop
 
 > The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
@@ -27,9 +25,25 @@ Node事件循环
 
 While each phase is special in its own way, generally, when the event loop enters a given phase, it will perform any operations specific to that phase, then execute callbacks in that phase's queue until the queue has been exhausted or the maximum number of callbacks has executed.
 
+When the queue has been exhausted or the callback limit is reached, the event loop will move to the next phase, and so on.
 
+Since any of these operations may **schedule\(调度\) **_more _operations and new events **processed\(处理\)** in the **poll\(轮训\) **phase are queued by the kernel, poll events can be queued while polling events are being processed. As a result, long running callbacks can allow the poll phase to run much longer than a timer's** threshold\(阀值\)**. 
 
+## Phases Overview各个阶段预览 {#header-phases-overview}
 
+**timers **: **\(执行由setTimeout和setInterval调度的回调\)**
+
+**pending callbacks **: executes I/O callbacks deferred to the next loop iteration.
+
+**idle, prepare **: only used internally.
+
+**poll **: retrieve\(检索\) new I/O events; execute I/O related callbacks \(almost all with the exception of close callbacks, the ones scheduled by timers, and`setImmediate()`\); node will block here when appropriate.
+
+**check **: `setImmediate() `callbacks are invoked here.
+
+**close callbacks **: some close callbacks, e.g. `socket.on('close', ...)`
+
+.
 
 
 
