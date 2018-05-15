@@ -16,6 +16,7 @@
   * [内部模块实现的原理](nei-bu-mo-kuai-shi-xian-de-yuan-li.md)
   * [线程threads介绍](xian-cheng-threads-jie-shao.md)
   * [Node事件循环](nodeshi-jian-xun-huan.md)
+  * [Don't Block the Event Loop](dont-block-the-event-loop.md)
   * [libuv线程池](libuvxian-cheng-chi.md)
   * [libuv OS代理](libuv-osdai-li.md)
 * [Express介绍](expressjie-shao.md)
