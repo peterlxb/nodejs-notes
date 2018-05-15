@@ -27,7 +27,7 @@ While each phase is special in its own way, generally, when the event loop enter
 
 When the queue has been exhausted or the callback limit is reached, the event loop will move to the next phase, and so on.
 
-Since any of these operations may **schedule\(调度\) **_more _operations and new events **processed\(处理\)** in the **poll\(轮训\) **phase are queued by the kernel, poll events can be queued while polling events are being processed. As a result, long running callbacks can allow the poll phase to run much longer than a timer's** threshold\(阀值\)**. 
+Since any of these operations may **schedule\(调度\) **\_more \_operations and new events **processed\(处理\)** in the **poll\(轮训\) **phase are queued by the kernel, poll events can be queued while polling events are being processed. As a result, long running callbacks can allow the poll phase to run much longer than a timer's** threshold\(阀值\)**.
 
 ## Phases Overview各个阶段预览 {#header-phases-overview}
 
@@ -39,23 +39,11 @@ Since any of these operations may **schedule\(调度\) **_more _operations and n
 
 **poll **: retrieve\(检索\) new I/O events; execute I/O related callbacks \(almost all with the exception of close callbacks, the ones scheduled by timers, and`setImmediate()`\); node will block here when appropriate.
 
-**check **: `setImmediate() `callbacks are invoked here.
+**check **: `setImmediate()`callbacks are invoked here.
 
 **close callbacks **: some close callbacks, e.g. `socket.on('close', ...)`
 
-.
-
-
-
-
-
-
-
-
-
-
-
-
+### timers {#header-timers}
 
 
 
