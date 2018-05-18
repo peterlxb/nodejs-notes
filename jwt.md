@@ -107,3 +107,9 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3VzZXIiOiJCIiwidGFyZ2V0X3VzZXIiOiJ
 
 其实JWT还经常用于设计用户认证和授权系统，甚至实现Web应用的单点登录
 
+参考文章
+
+[http://blog.leapoahead.com/2015/09/06/understanding-jwt/](http://blog.leapoahead.com/2015/09/06/understanding-jwt/)
+
+[http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/](http://blog.leapoahead.com/2015/09/07/user-authentication-with-jwt/)
+
