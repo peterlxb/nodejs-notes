@@ -85,6 +85,8 @@ rSWamyAYwuHCo7IFAgd1oRpSP7nzL7BF5t7ItqpKViM
 
 > **secret是保存在服务器端的，jwt的签发生成也是在服务器端的，secret就是用来进行jwt的签发和jwt的验证，所以，它就是你服务端的私钥，在任何场景都不应该流露出去。一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。**
 
+> 一般是在请求头里加入`Authorization`，并加上`Bearer`标注：
+
 这一部分又叫做 **签名 **。
 
 ![](/assets/屏幕快照 2018-05-18 下午5.25.50.png)
