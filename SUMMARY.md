@@ -26,6 +26,7 @@
   * [Mongoose与MongoDB](mongodbjie-shao/mongooseyu-mongodb.md)
 * [安全与认证](an-quan-yu-ren-zheng.md)
   * [介绍](an-quan-yu-ren-zheng/jie-shao.md)
+  * [JWT](jwt.md)
 * Socket.io介绍
 * [前后端流程图](qian-hou-duan-liu-cheng-tu.md)
 * [应用架构](ying-yong-jia-gou.md)
