@@ -46,6 +46,8 @@ https://your.awesome-app.com/make-friend/?from_user=B&target_user=A
 eyJpc3MiOiJKb2huIFd1IEpXVCIsImlhdCI6MTQ0MTU5MzUwMiwiZXhwIjoxNDQxNTk0NzIyLCJhdWQiOiJ3d3cuZXhhbXBsZS5jb20iLCJzdWIiOiJqcm9ja2V0QGV4YW1wbGUuY29tIiwiZnJvbV91c2VyIjoiQiIsInRhcmdldF91c2VyIjoiQSJ9
 ```
 
+> Base64是一种编码，也就是说，它是可以被翻译回原来的样子来的。它并不是一种加密过程。
+
 ##### 头部（Header） {#头部（Header）}
 
 JWT还需要一个头部，头部用于描述关于该JWT的最基本的信息，例如其类型以及签名所用的算法等。这也可以被表示成一个JSON对象。
@@ -115,8 +117,6 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3VzZXIiOiJCIiwidGFyZ2V0X3VzZXIiOiJ
 
 其实JWT还经常用于设计用户认证和授权系统，甚至实现Web应用的单点登录
 
-
-
 # 八幅漫画理解使用JSON Web Token设计单点登录系统
 
 ### 用户认证八步走 {#用户认证八步走}
@@ -128,8 +128,6 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3VzZXIiOiJCIiwidGFyZ2V0X3VzZXIiOiJ
 首先，服务器应用（下面简称“应用”）让用户通过Web表单将自己的用户名和密码发送到服务器的接口。这一过程一般是一个HTTP POST请求。建议的方式是通过SSL加密的传输（https协议），从而避免敏感信息被嗅探。
 
 ![](/assets/屏幕快照 2018-05-18 下午5.31.20.png)
-
-
 
 接下来，应用和数据库核对用户名和密码。
 
@@ -168,8 +166,6 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3VzZXIiOiJCIiwidGFyZ2V0X3VzZXIiOiJ
 ### 和Session方式存储id的差异 {#和Session方式存储id的差异}
 
 Session方式存储用户id的最大弊病在于要占用大量服务器内存，对于较大型应用而言可能还要保存许多的状态。一般而言，大型应用还需要借助一些KV数据库和一系列缓存机制来实现Session的存储。
-
-
 
 而JWT方式将用户状态分散到了客户端中，可以明显减轻服务端的内存压力。除了用户id之外，还可以存储其他的和用户相关的信息，例如该用户是否是管理员、用户所在的分桶
 
